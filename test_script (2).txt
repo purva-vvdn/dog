@@ -1,0 +1,21 @@
+*** Settings ***
+Documentation     A test suite with a single test for New Tab
+...               Created by hats' Robotcorder
+Library           Selenium2Library    timeout=10
+
+*** Variables ***
+${BROWSER}    chrome
+${SLEEP}    3
+
+*** Test Cases ***
+New Tab test
+    Open Browser    chrome://newtab/    ${BROWSER}
+    Click Element    //span[@class="user-name"]
+    Click Element    //mat-icon[@class="mat-icon notranslate mat-mdc-menu-trigger extend-icon material-icons mat-ligature-font mat-icon-no-color"]
+    Click Element    //button[@class="mat-mdc-menu-item mat-mdc-focus-indicator ng-tns-c2786309385-1 cdk-focused cdk-mouse-focused"]
+    Click Element    //button[@class="btn-primary"]
+    Input Text    //input[@id="username"]    purvatenant@yopmail.com
+    Input Text    //input[@id="password"]    ***
+    Click Element    //button[@class="login-btn btn-primary"]
+
+    Close Browser
