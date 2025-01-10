@@ -13,5 +13,9 @@ ${SLEEP}      10
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
     Call Method    ${options}    add_argument    --disable-gpu
+<<<<<<< HEAD
     Open Browser    https://chromewebstore.google.com/detail/robotcorder/ifiilbfgcemdapeibjfohnfpfmfblmpd?hl=en-GB&utm_source=ext_sidebar    ${BROWSER}    options=${options}    options=${options}
+=======
+    Open Browser    https://chromewebstore.google.com/detail/robotcorder/ifiilbfgcemdapeibjfohnfpfmfblmpd?hl=en-GB&utm_source=ext_sidebar    ${BROWSER}    options=${options}
+>>>>>>> branch 'master' of https://github.com/purva-vvdn/dog.git
     Close Browser

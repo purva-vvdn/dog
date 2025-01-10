@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *** Settings ***
 Documentation     A test suite with a single test for New Tab
 ...               Created by hats' Robotcorder
@@ -36,3 +37,5 @@ SmartFitAutomation test
     Wait Until Element Is Visible    xpath=//button[@class="ng-star-inserted"]    timeout=5
     Click Element    xpath=//button[@class="ng-star-inserted"]
     Close Browser
+=======
+>>>>>>> branch 'master' of https://github.com/purva-vvdn/dog.git
